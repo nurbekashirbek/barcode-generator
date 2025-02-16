@@ -1,1 +1,16 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Генерация штрихкодов</title>
+</head>
+<body>
+    <h2>Введите данные</h2>
+    <form action="/generate" method="post">
+        <label>Название локации:</label>
+        <input type="text" name="location" required>
+        <label>Количество:</label>
+        <input type="number" name="count" min="1" max="100" required>
+        <button type="submit">Создать PDF</button>
+    </form>
+</body>
+</html>
